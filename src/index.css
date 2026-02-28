@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Make sizing predictable and avoid accidental overflow */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Prevent horizontal scrolling caused by wide elements */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Global font sizing and base styles */
+:root{
+  /* base font size: adjust this value to scale all rem-based sizes */
+  font-size: 16px;
+  --site-max-width: 1668px; /* content width used across About / Projects / Contact */
+}
+
+html, body {
+  height: 100%;
+}
+
+/* Smooth native scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ensure anchor targets are offset below the sticky navbar */
+section {
+  scroll-margin-top: 100px; /* adjust if your navbar height changes */
+}
+
+body {
+  font-size: 1rem; /* 1rem == 16px by default */
+  line-height: 1.6;
+  color: #222;
+}
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* sensible typographic scale using rems */
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
+p, li, a, span { font-size: 1rem; }
+
+/* Small screens: scale down slightly */
+@media (max-width: 480px){
+  :root{ font-size: 15px; }
+  h1{ font-size: 2rem; }
+  h2{ font-size: 1.75rem; }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

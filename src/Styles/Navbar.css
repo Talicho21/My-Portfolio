@@ -1,0 +1,50 @@
+/* src/Styles/Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 2rem;
+  background: #f7f5f0;
+  border-bottom: 0.4rem solid #1e1e2a;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #1e1e2a;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.navbar a:hover {
+  color: #d44c2f;
+  transform: translateY(-2px);
+}
+
+.navbar a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  background: #1e1e2a; /* unified button background */
+  padding: 0.5rem 1.3rem;
+  border-radius: 2rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  display: inline-block;
+}
+.navbar a:hover {
+  background: #d44c2f; /* same hover as contact */
+  transform: translateY(-2px);
+}
+
+/* Keep contact class for any additional specificity if needed */
+.navbar a.contact {
+  /* inherits unified styles */
+}
