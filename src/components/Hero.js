@@ -32,7 +32,7 @@ const Hero = () => {
             Download My CV
           </button>
           <button onClick={handleViewCV} className="btn btn-view">
-            View MyCV
+            View My CV
           </button>
         </div>
       </div>
