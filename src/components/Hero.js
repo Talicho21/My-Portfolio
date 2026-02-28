@@ -29,10 +29,10 @@ const Hero = () => {
         
         <div className="hero-buttons">
           <button onClick={handleDownloadCV} className="btn btn-download">
-            Download CV
+            Download My CV
           </button>
           <button onClick={handleViewCV} className="btn btn-view">
-            View CV
+            View MyCV
           </button>
         </div>
       </div>
